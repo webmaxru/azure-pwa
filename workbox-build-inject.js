@@ -1,7 +1,7 @@
 const {injectManifest} = require('workbox-build')
 
 let workboxConfig = {
-  globDirectory: 'dist/angular-pwa',
+  globDirectory: 'dist/azure-pwa',
   globPatterns: [
     'favicon.ico',
     'index.html',
@@ -9,7 +9,7 @@ let workboxConfig = {
     '*.js'
   ],
   swSrc: 'src/service-worker.js',
-  swDest: 'dist/angular-pwa/service-worker.js'
+  swDest: 'dist/azure-pwa/service-worker.js'
 }
 
 injectManifest(workboxConfig)
